@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">WalkMe</string>
+    <string name="login_input">Вход</string>
+    <string name="password">Введите пароль</string>
+    <string name="login">Введите логин</string>
+    <string name="no_account">Нет аккаунта?Создать аккаунт!</string>
+    <string name="register_new_account">РЕГИСТРАЦИЯ НОВОГО АККАУНТА</string>
+    <string name="name_register">Введите своё имя</string>
+    <string name="surname">Введите фамилию</string>
+    <string name="reapit_password">Повторите параль</string>
+    <string name="choose_your_gender">Укажите свой пол</string>
+    <string name="specify_the_age">Укажите свой возраст</string>
+    <string name="choose_the_area_in_which_you_live">Укажите в каком районе вы живёте</string>
+    <string name="to_reset">В случае если вы забудете пароль укажите секретный вопрос</string>
+    <string name="answer_question">Укажите ответ на вопрос</string>
+    <string name="next">Далее</string>
+    <string name="icon_home">Профиль</string>
+    <string name="icon_rating">Рейтинг</string>
+    <string name="icon_search">Поиск</string>
+    <string name="icon_notification">Уведомление</string>
+    <string name="home_name">Светлана Атаманова</string>
+    <string name="photo">Фото</string>
+    <string name="message">Сообщение</string>
+    <string name="settings">Настройки</string>
+    <string name="interest">Интересы</string>
+    <string name="my_self">О себе</string>
+    <string name="myself_information">Скромная девушка ищу парня для серьезных отношений, главное на мое мнение в парне это ум, мужество, BMW.Я считатаю что я самая умная красивая и ахуеная гучи дамма на планете</string>
+    <string name="notification_name">Уведомление</string>
 </resources>

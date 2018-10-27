@@ -3,4 +3,16 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="grey">#bfbfbf</color>
+    <color name="white">#fff</color>
+    <color name="milkgrey">#e0f7f7f7</color>
+    <color name="myDialig">#0288D1</color>
+    <color name="intereci">#D7CCC8</color>
+    <color name="shadow">#BDBDBD</color>
+    <color name="black">#000000</color>
+    <color name="amber">#fbff00</color>
+    <color name="blackChikaname">#d5000000</color>
+    <color name="blackBaground">#6b6b6b</color>
+    <color name="link">#4FC3F7</color>
+    <color name="red">#f2313e</color>
 </resources>
