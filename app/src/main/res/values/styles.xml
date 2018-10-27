@@ -7,12 +7,12 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
     <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
         <item name="colorPrimary">@color/colorPrimary</item>
     </style>
+    <!--activity_home style-->
     <style name="LinearStyleHome">
         <item name="android:layout_marginLeft">8dp</item>
         <item name="android:layout_marginRight">8dp</item>
@@ -21,6 +21,9 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/user_shape_background</item>
         <item name="android:orientation">vertical</item>
+    </style>
+    <style name="LinearStyleHomeMySelf" parent="LinearStyleHome">
+        <item name="android:layout_marginBottom">4dp</item>
     </style>
     <style name="TextHomeTitle">
         <item name="android:layout_width">match_parent</item>
@@ -48,6 +51,23 @@
         <item name="atg_borderStrokeWidth">10dp</item>
         <item name="atg_verticalPadding">3dp</item>
         <item name="atg_horizontalPadding">3dp</item>
+    </style>
+    <style name="HomeEditTag">
+<item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:imeOptions"></item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <!--home_navigation style-->
+    <style name="HomeNavigation">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="HomeNavigationImage" parent="HomeNavigation">
+        <item name="android:layout_height">30dp</item>
     </style>
 
 </resources>
