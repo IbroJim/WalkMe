@@ -1,4 +1,4 @@
-package ibrojim.walkme.firstproject.walkme.Home;
+package ibrojim.walkme.firstproject.walkme.Rating;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,17 +12,18 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import ibrojim.walkme.firstproject.walkme.R;
 import ibrojim.walkme.firstproject.walkme.Util.BottomNavigationViewExHelper;
 
-public class HomeActivity extends AppCompatActivity {
+public class RatingActivity extends AppCompatActivity {
 
+    private Context mContext=RatingActivity.this;
+    private static final int ACTIVITY_NUM=2;
 
-    private Context mContext=HomeActivity.this;
-    private static final int ACTIVITY_NUM=0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_rating);
         setupBottomNavigationView();
+
     }
     private void setupBottomNavigationView(){
         BottomNavigationViewEx bottomNavigationViewEx=(BottomNavigationViewEx) findViewById(R.id.bottom_navigation_view_ex);
@@ -33,5 +34,4 @@ public class HomeActivity extends AppCompatActivity {
         menuItem.setChecked(true);
 
     }
-
 }

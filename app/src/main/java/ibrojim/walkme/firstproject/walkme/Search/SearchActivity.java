@@ -1,4 +1,4 @@
-package ibrojim.walkme.firstproject.walkme.Home;
+package ibrojim.walkme.firstproject.walkme.Search;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,18 +12,18 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import ibrojim.walkme.firstproject.walkme.R;
 import ibrojim.walkme.firstproject.walkme.Util.BottomNavigationViewExHelper;
 
-public class HomeActivity extends AppCompatActivity {
+public class SearchActivity extends AppCompatActivity {
 
-
-    private Context mContext=HomeActivity.this;
-    private static final int ACTIVITY_NUM=0;
+    private Context mContext=SearchActivity.this;
+    private static final int ACTIVITY_NUM=1;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_seacrh);
         setupBottomNavigationView();
     }
+
     private void setupBottomNavigationView(){
         BottomNavigationViewEx bottomNavigationViewEx=(BottomNavigationViewEx) findViewById(R.id.bottom_navigation_view_ex);
         BottomNavigationViewExHelper.setupBottomNavigationEx(bottomNavigationViewEx);
@@ -33,5 +33,6 @@ public class HomeActivity extends AppCompatActivity {
         menuItem.setChecked(true);
 
     }
+
 
 }

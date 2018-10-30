@@ -1,4 +1,4 @@
-package ibrojim.walkme.firstproject.walkme.Home;
+package ibrojim.walkme.firstproject.walkme.Notification;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,16 +12,15 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import ibrojim.walkme.firstproject.walkme.R;
 import ibrojim.walkme.firstproject.walkme.Util.BottomNavigationViewExHelper;
 
-public class HomeActivity extends AppCompatActivity {
+public class NotificationActivity extends AppCompatActivity {
 
-
-    private Context mContext=HomeActivity.this;
-    private static final int ACTIVITY_NUM=0;
+    private Context mContext=NotificationActivity.this;
+    private static final int ACTIVITY_NUM=3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_notification);
         setupBottomNavigationView();
     }
     private void setupBottomNavigationView(){
@@ -33,5 +32,4 @@ public class HomeActivity extends AppCompatActivity {
         menuItem.setChecked(true);
 
     }
-
 }

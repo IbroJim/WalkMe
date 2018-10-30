@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Notification.NotificationActivity"/>
+        <activity android:name=".Search.SearchActivity"/>
+        <activity android:name=".Rating.RatingActivity"/>
     </application>
 
 </manifest>
