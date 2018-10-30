@@ -48,16 +48,18 @@
         <item name="atg_backgroundColor">@color/myDialig</item>
         <item name="atg_borderColor">@color/myDialig</item>
         <item name="atg_textColor">@color/white</item>
-        <item name="atg_borderStrokeWidth">10dp</item>
+        <item name="atg_borderStrokeWidth">1dp</item>
         <item name="atg_verticalPadding">3dp</item>
-        <item name="atg_horizontalPadding">3dp</item>
+        <item name="atg_horizontalPadding">10dp</item>
     </style>
     <style name="HomeEditTag">
-<item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:imeOptions"></item>
         <item name="android:inputType">textEmailAddress</item>
+        <item name="android:hint">Добовать интерес</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
     </style>
 
     <!--home_navigation style-->
