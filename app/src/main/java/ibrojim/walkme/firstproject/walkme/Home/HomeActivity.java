@@ -1,6 +1,5 @@
 package ibrojim.walkme.firstproject.walkme.Home;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,11 +8,7 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
@@ -78,24 +73,9 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
-    private void setupMySelf(){
-        addMySelfInformation=(EditText) findViewById(R.id.home_user_myself_information);
-        addMySelfInformation.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if((event.getAction()==KeyEvent.ACTION_DOWN)&&(keyCode==KeyEvent.KEYCODE_ENTER)){
-                    Context context=getApplicationContext();
-                    InputMethodManager imm=(InputMethodManager)context.getSystemService(Context.INPUT_METHOD_SERVICE);
-                    imm.hideSoftInputFromWindow(addMySelfInformation.getWindowToken(),0);
-
-                    return true;
-                }
-
-                return false;
-            }
-        });
-
+    private void setupMySelf() {
+        addMySelfInformation = (EditText) findViewById(R.id.edit_myself);
+        addMySelfInformation.setHorizontallyScrolling(false);
+        addMySelfInformation.setMaxLines(Integer.MAX_VALUE);
     }
-
-
 }

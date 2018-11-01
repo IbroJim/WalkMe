@@ -105,20 +105,10 @@
                     android:layout_marginEnd="6dp" />
             </RelativeLayout>
                 <EditText
-                    android:layout_marginBottom="6dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:id="@+id/home_user_myself_information"
+                    style="@style/EditMyself"
+                    android:id="@+id/edit_myself"
                     android:backgroundTint="@color/white"
-                    android:hint="Введите информацию о себе"
-                    android:gravity="top"
-                    android:textSize="14sp"
-                    android:imeOptions="actionDone"
-                    android:lines="4"
-                    android:maxLines="4"
-                    />
+                    android:hint="Введите информацию о себе"/>
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
