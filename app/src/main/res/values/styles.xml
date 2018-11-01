@@ -77,4 +77,17 @@
         <item name="android:layout_height">30dp</item>
     </style>
 
+    <!-- activity_registry style-->
+    <style name="InputLayoutStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+    <style name="EditInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
 </resources>

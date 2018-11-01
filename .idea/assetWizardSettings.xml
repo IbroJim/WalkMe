@@ -72,8 +72,10 @@
                                   </option>
                                   <option name="values">
                                     <map>
+                                      <entry key="assetType" value="IMAGE" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="outputName" value="ic_settings" />
+                                      <entry key="imageAsset" value="D:\фото\female-512.png" />
+                                      <entry key="outputName" value="ic_female" />
                                     </map>
                                   </option>
                                 </PersistentState>
