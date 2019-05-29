@@ -9,7 +9,7 @@
         android:icon="@drawable/ic_search"/>
     <item android:title="@string/icon_rating"
         android:id="@+id/icon_rating"
-        android:icon="@drawable/ic_rating"/>
+        android:icon="@drawable/ic_messege"/>
     <item android:title="@string/icon_notification"
            android:id="@+id/icon_notification"
            android:icon="@drawable/ic_notification"/>

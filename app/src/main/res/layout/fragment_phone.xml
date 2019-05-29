@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/fon"
+        android:src="@drawable/fon2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/edit_text_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/confirm"
+        android:layout_below="@+id/fon">
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/number"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:shadowColor="@color/colorBlack" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="@string/next"
+        android:id="@+id/confirm"
+        android:layout_below="@id/fon"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/confirm_button"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

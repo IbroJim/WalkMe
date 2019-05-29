@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <me.gujun.android.taggroup.TagGroup
+        android:id="@+id/dialog_tag"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:atg_textColor="@color/colorWhite"
+        app:atg_backgroundColor="@color/colorBlue"
+        app:atg_borderColor="@color/colorBlue"
+        app:atg_verticalPadding="3dp"
+        app:atg_horizontalPadding="10dp">
+    </me.gujun.android.taggroup.TagGroup>
+    <RelativeLayout
+        android:layout_below="@id/dialog_tag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+       <EditText
+          android:id="@+id/edit_tag"
+           style="@style/EditTextAddTag"
+           />
+
+    </RelativeLayout>
+
+</RelativeLayout>

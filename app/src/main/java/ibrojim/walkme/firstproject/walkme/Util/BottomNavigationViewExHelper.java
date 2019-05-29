@@ -11,7 +11,7 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import ibrojim.walkme.firstproject.walkme.Home.HomeActivity;
 import ibrojim.walkme.firstproject.walkme.Notification.NotificationActivity;
 import ibrojim.walkme.firstproject.walkme.R;
-import ibrojim.walkme.firstproject.walkme.Rating.RatingActivity;
+import ibrojim.walkme.firstproject.walkme.Messege.MessegeActivity;
 import ibrojim.walkme.firstproject.walkme.Search.SearchActivity;
 
 public class BottomNavigationViewExHelper {
@@ -45,7 +45,7 @@ public class BottomNavigationViewExHelper {
                         break;
                     case R.id.icon_rating:
                         if(positionActivity!=2){
-                            Intent intent=new Intent(context,RatingActivity.class);
+                            Intent intent=new Intent(context, MessegeActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             context.startActivity(intent);
                             break;

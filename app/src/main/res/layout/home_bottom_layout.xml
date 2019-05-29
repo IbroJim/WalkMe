@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/home_linear_layout"
+        style="@style/LinearStyleHome">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/interest"
+                style="@style/TextHomeTitle"/>
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/zoom_tag"
+                android:layout_marginRight="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_add_tags"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="6dp" />
+        </RelativeLayout>
+        <me.gujun.android.taggroup.TagGroup
+            android:id="@+id/home_tag_layout"
+          style="@style/TextTagGroup"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/home_linear_layout"
+        style="@style/LinearStyleHomeMySelf">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/TextHomeTitle"
+                android:text="@string/my_self" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:maxLines="8"
+            android:id="@+id/edit_myself"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Введите информацию"
+            android:layout_gravity="center|top"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"/>
+        <!--   android:backgroundTint="@color/white"
+            android:hint="Введите информацию о себе"-->
+    </LinearLayout>
+</RelativeLayout>
+
+

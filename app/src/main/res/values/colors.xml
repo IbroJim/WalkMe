@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#03A9F4</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="grey">#bfbfbf</color>
-    <color name="white">#fff</color>
-    <color name="milkgrey">#e0f7f7f7</color>
-    <color name="myDialig">#0288D1</color>
-    <color name="intereci">#D7CCC8</color>
-    <color name="shadow">#BDBDBD</color>
-    <color name="black">#000000</color>
-    <color name="amber">#fbff00</color>
-    <color name="blackChikaname">#d5000000</color>
-    <color name="blackBaground">#6b6b6b</color>
-    <color name="link">#4FC3F7</color>
-    <color name="red">#f2313e</color>
+    <color name="colorGrey">#bfbfbf</color>
+    <color name="colorTitle">#A7A6A6</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorMilkgrey">#e0f7f7f7</color>
+    <color name="colorBlue">#0288D1</color>
+    <color name="colorIntereci">#D7CCC8</color>
+    <color name="colorShadow">#BDBDBD</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorAmber">#fbff00</color>
+    <color name="colorBlackChikaname">#d5000000</color>
+    <color name="colorBlackBaground">#6b6b6b</color>
+    <color name="colorlink">#4FC3F7</color>
+    <color name="colorRed">#FF0031</color>
 </resources>

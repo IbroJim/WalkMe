@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical">
+<ProgressBar
+    android:layout_centerHorizontal="true"
+    android:id="@+id/progress_registry"
+    android:layout_width="200dp"
+    android:layout_height="200dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:text="@string/register_new_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputLayout
+            style="@style/InputLayoutStyle">
+            <EditText
+                android:id="@+id/edit_text_name"
+                style="@style/EditInputLayout"
+                android:inputType="textPersonName"
+                android:hint="@string/name_register"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/InputLayoutStyle">
+            <EditText
+                android:id="@+id/edit_text_surname"
+                style="@style/EditInputLayout"
+                android:hint="@string/surname"
+                android:inputType="textPersonName"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_your_gender"/>
+        <io.ghyeok.stickyswitch.widget.StickySwitch
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            app:ss_iconPadding="14dp"
+            app:ss_iconSize="18dp"
+            app:ss_leftIcon="@mipmap/ic_male"
+            app:ss_leftText="Парень"
+            app:ss_rightIcon="@mipmap/ic_female"
+            app:ss_rightText="Девушка"
+            app:ss_selectedTextSize="14sp"
+            app:ss_sliderBackgroundColor="@color/colorWhite"
+            app:ss_switchColor="@color/colorBlack"
+            app:ss_textColor="@color/colorBlack"
+            app:ss_textSize="12sp"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_the_area_in_which_you_live"/>
+        <Spinner
+            android:id="@+id/spinner_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+        <LinearLayout
+            android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:layout_height="30dp">
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="@string/specify_the_age"/>
+            <Spinner
+                android:layout_gravity="center_vertical"
+                android:id="@+id/spinner_age"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+
+                android:gravity="bottom"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatButton
+            android:layout_marginTop="6dp"
+            android:id="@+id/registry"
+            android:background="@drawable/button_login_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/registry"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

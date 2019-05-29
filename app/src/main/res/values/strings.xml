@@ -2,7 +2,7 @@
     <string name="app_name">WalkMe</string>
     <string name="login_input">Вход</string>
     <string name="password">Введите пароль</string>
-    <string name="login">Введите логин</string>
+    <string name="login">Номер телефона</string>
     <string name="no_account">Нет аккаунта?Создать аккаунт!</string>
     <string name="register_new_account">РЕГИСТРАЦИЯ НОВОГО АККАУНТА</string>
     <string name="name_register">Введите своё имя</string>
@@ -26,4 +26,34 @@
     <string name="my_self">О себе</string>
     <string name="myself_information">Скромная девушка ищу парня для серьезных отношений, главное на мое мнение в парне это ум, мужество, BMW.Я считатаю что я самая умная красивая и ахуеная гучи дамма на планете</string>
     <string name="notification_name">Уведомление</string>
+    <string name="add">Добавить</string>
+    <string name="year">23 года</string>
+    <string name="code">Код</string>
+    <string name="number">+7</string>
+    <string name="registry">Зарегестрироваться</string>
+    <string name="phone_number">Номер телефона</string>
+
+    <string-array name="areya">
+        <item>Армянск</item>
+        <item>Алушта</item>
+        <item>Бахчисарайский район</item>
+        <item>Белогорский район</item>
+        <item>Джанкойский район</item>
+        <item>Евпатория</item>
+        <item>Керчь</item>
+        <item>Красноперекопский район</item>
+        <item>Кировский район</item>
+        <item>Красногвардейский район</item>
+        <item>Ленинский район</item>
+        <item>Нижнегорский район</item>
+        <item>Первомайский район</item>
+        <item>Раздольненский район</item>
+        <item>Сакский район</item>
+        <item>Симферопольский район</item>
+        <item>Советский район</item>
+        <item>	Черноморский район</item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
 </resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "774453302315",
+    "firebase_url": "https://walkme-1e9ad.firebaseio.com",
+    "project_id": "walkme-1e9ad",
+    "storage_bucket": "walkme-1e9ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774453302315:android:e60e5c4c9957b77b",
+        "android_client_info": {
+          "package_name": "ibrojim.walkme.firstproject.walkme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774453302315-tmb6s4bdjumum9j3cpgepncuvvbvu8f7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ibrojim.walkme.firstproject.walkme",
+            "certificate_hash": "c48bc2a000ae98ddcebecfb877686790cf695088"
+          }
+        },
+        {
+          "client_id": "774453302315-s1u3mphj894fsc4hft2u0fr12u84jo6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5G_ykBRwfXogW9LRXHTGhPSqJg1lOzlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774453302315-s1u3mphj894fsc4hft2u0fr12u84jo6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
