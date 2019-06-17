@@ -27,6 +27,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import ibrojim.walkme.firstproject.walkme.Home.HomeActivity;
 import ibrojim.walkme.firstproject.walkme.Model.User;
@@ -36,18 +37,17 @@ import io.ghyeok.stickyswitch.widget.StickySwitch;
 public class FragmentCreateUser extends Fragment {
 
     private EditText editName, editSurname;
-    private StickySwitch aSwitch;
     private Spinner spinnerArea, spinnerAge;
     private Button registry;
     private ProgressBar progressBar;
+    private StickySwitch stickySwitch;
 
 
     private String areya;
     private Integer age;
     private FirebaseDatabase database;
-    private DatabaseReference myRef,myRefTwo;
-
-
+    private DatabaseReference myRef,tagRef;
+    private String gender;
 
 
     @Nullable
@@ -62,7 +62,9 @@ public class FragmentCreateUser extends Fragment {
     }
     private void seupFirebaseDatabase(){
         database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+
+     //   myRef = database.getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+
 
     }
     private void setupView(View view){
@@ -72,6 +74,7 @@ public class FragmentCreateUser extends Fragment {
         spinnerArea=view.findViewById(R.id.spinner_area);
         registry=view.findViewById(R.id.registry);
         progressBar=view.findViewById(R.id.progress_registry);
+        stickySwitch=view.findViewById(R.id.sticky);
         progressBar.setVisibility(View.GONE);
         registry.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,26 +120,34 @@ public class FragmentCreateUser extends Fragment {
 
     }
     private void setupCreateUser() {
+        checkSticky();
         if (editName.getText().toString().isEmpty() || editSurname.getText().toString().isEmpty()) {
             Toast.makeText(getActivity(), "Заполните поля", Toast.LENGTH_LONG).show();
             return;
         }
+
+        Random random=new Random();
+        int i=random.nextInt(200);
+
         progressBar.setVisibility(View.VISIBLE);
-        User user = new User(editName.getText().toString(), editSurname.getText().toString(), areya, age);
-        myRef.push().setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+        User user = new User(editName.getText().toString(), editSurname.getText().toString(), areya, age,gender, "");
+        myRef.setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
                     Intent intent=new Intent(getActivity(),HomeActivity.class);
                     startActivity(intent);
+
                 }
             }
         });
 
     }
-
-
-
-
-
+    private void checkSticky(){
+    if(stickySwitch.getDirection()==StickySwitch.Direction.LEFT){
+       gender="M";
+    }else {
+        gender="W";
+    }
+    }
 }

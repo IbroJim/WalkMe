@@ -6,9 +6,9 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/user_image"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="350dp"
         android:scaleType="centerCrop"
         android:src="@drawable/photo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +35,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:src="@drawable/icon_add_photo"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/user_image"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -50,14 +50,14 @@
         android:textStyle="bold"
         android:textSize="16sp"
 
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/user_image"
+        app:layout_constraintEnd_toStartOf="@+id/user_image"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintTop_toBottomOf="@+id/user_image" />
 
     <TextView
-        android:id="@+id/home_name_user"
+        android:id="@+id/name_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -67,13 +67,13 @@
         android:text="@string/home_name"
         android:textColor="@color/colorWhite"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/areya"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/areya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -82,11 +82,11 @@
         android:text="ПГТ. Советский "
         android:textColor="@color/colorWhite"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/user_image"
         app:layout_constraintStart_toStartOf="parent" />
 
     <me.gujun.android.taggroup.TagGroup
-        android:id="@+id/home_tag_layout"
+        android:id="@+id/interest"
         style="@style/TextTagGroup"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -109,17 +109,17 @@
         android:text="@string/interest"
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/home_tag_layout"
-        app:layout_constraintEnd_toStartOf="@+id/home_tag_layout"
+        app:layout_constraintBottom_toTopOf="@+id/interest"
+        app:layout_constraintEnd_toStartOf="@+id/interest"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/home_tag_layout"
-        app:layout_constraintTop_toTopOf="@+id/home_tag_layout"
+        app:layout_constraintStart_toEndOf="@+id/interest"
+        app:layout_constraintTop_toTopOf="@+id/interest"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/edit_myself"
+        android:id="@+id/myself"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="115dp"
         android:layout_gravity="center|top"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -127,15 +127,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/user_shape_background"
-        android:lines="5"
-        android:maxLines="8"
         android:paddingLeft="8dp"
         android:paddingTop="20dp"
-        android:text="Введите информацию"
+        android:text="@string/edit_you_self"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_tag_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/interest" />
 
     <TextView
         android:id="@+id/textView2"
@@ -147,11 +145,11 @@
         android:text="@string/my_self"
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/edit_myself"
-        app:layout_constraintEnd_toStartOf="@+id/edit_myself"
+        app:layout_constraintBottom_toTopOf="@+id/myself"
+        app:layout_constraintEnd_toStartOf="@+id/myself"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/edit_myself"
-        app:layout_constraintTop_toTopOf="@+id/edit_myself"
+        app:layout_constraintStart_toEndOf="@+id/myself"
+        app:layout_constraintTop_toTopOf="@+id/myself"
         app:layout_constraintVertical_bias="0.0" />
 
     <FrameLayout
@@ -165,6 +163,32 @@
 
             />
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"
+        android:text="25"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/areya"
+        app:layout_constraintTop_toBottomOf="@+id/name_user" />
+
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/home_surname_user"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/age"
+        app:layout_constraintStart_toEndOf="@+id/name_user" />
 
 
 </android.support.constraint.ConstraintLayout>

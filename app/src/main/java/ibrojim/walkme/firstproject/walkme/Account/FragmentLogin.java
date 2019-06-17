@@ -26,6 +26,7 @@ public class FragmentLogin extends Fragment {
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
+    private Integer ACCOUNT=1;
 
 
     @Nullable
@@ -52,7 +53,8 @@ public class FragmentLogin extends Fragment {
         };
         FirebaseUser firebaseUser=mAuth.getCurrentUser();
         if(firebaseUser!=null){
-            ((AccountActivity)getActivity()).nextFragmentRegistry();
+            Intent intent=new Intent(getActivity(), HomeActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -81,7 +83,7 @@ public class FragmentLogin extends Fragment {
             editPhone.requestFocus();
             return;
         }
-        ((AccountActivity)getActivity()).nextFragmentLogin(phone);
+        ((AccountActivity)getActivity()).nextFragmentLogin(phone,ACCOUNT);
 
     }
 

@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
+    android:background="@drawable/alert_dialog_background"
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
-   <TextView
-       android:id="@+id/dialogText"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:textStyle="bold"/>
 
-</android.support.constraint.ConstraintLayout>
+   <EditText
+       android:layout_margin="16dp"
+       android:background="@drawable/user_shape_background"
+       android:hint="@string/edit_you_self"
+       android:gravity="left|top"
+       android:padding="8dp"
+       android:id="@+id/edit_myself"
+       android:layout_width="match_parent"
+       android:layout_height="140dp"
+       android:textStyle="bold"/>
+   <LinearLayout
+
+
+       android:paddingBottom="10dp"
+       android:layout_marginRight="16dp"
+       android:layout_marginLeft="16dp"
+       android:layout_below="@id/dtg"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/cancel"
+          android:textSize="18sp"
+          android:textColor="@color/colorRed"
+          android:text="@string/cancel"
+          android:gravity="center"
+          android:layout_weight="50"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:id="@+id/save"
+          android:textColor="@color/colorBlue"
+          android:textSize="18sp"
+          android:text="@string/save"
+          android:gravity="center"
+          android:layout_weight="50"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content" />
+   </LinearLayout>
+
+
+</LinearLayout>

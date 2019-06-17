@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/alert_dialog_background"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+    <me.gujun.android.taggroup.TagGroup
+        android:id="@+id/interest_alert_dialog"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/user_shape_background"
+        style="@style/TextTagGroup"
+        android:layout_height="200dp">
+
+    </me.gujun.android.taggroup.TagGroup>
+
+</FrameLayout>

@@ -24,10 +24,7 @@ public class FragmentVerify extends Fragment {
 
     private Button login;
     private EditText editPhone;
-
-    private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener authStateListener;
-
+    public Integer NO_ACCOUNT=0;
 
 
     @Nullable
@@ -57,7 +54,7 @@ public class FragmentVerify extends Fragment {
             editPhone.requestFocus();
             return;
         }
-        ((AccountActivity)getActivity()).nextFragment(phone);
+        ((AccountActivity)getActivity()).nextFragmentLogin(phone,NO_ACCOUNT);
 
     }
 

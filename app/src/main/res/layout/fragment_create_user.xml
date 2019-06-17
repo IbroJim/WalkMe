@@ -51,6 +51,7 @@
             android:layout_height="wrap_content"
             android:text="@string/choose_your_gender"/>
         <io.ghyeok.stickyswitch.widget.StickySwitch
+            android:id="@+id/sticky"
             android:layout_marginTop="6dp"
             android:layout_gravity="center"
             android:layout_width="150dp"
@@ -88,7 +89,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="50"
                 android:layout_height="match_parent"
-                android:gravity="bottom"
+                android:gravity="center_vertical"
                 android:text="@string/specify_the_age"/>
             <Spinner
                 android:layout_gravity="center_vertical"
@@ -100,7 +101,7 @@
                 android:layout_height="match_parent"/>
         </LinearLayout>
         <android.support.v7.widget.AppCompatButton
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="16dp"
             android:id="@+id/registry"
             android:background="@drawable/button_login_background"
             android:layout_width="match_parent"

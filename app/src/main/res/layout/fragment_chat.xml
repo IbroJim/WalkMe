@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#CCCCCC"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:background="@color/colorBlue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/name"
+            android:textSize="16sp"
+            android:text="@string/home_name"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:text="@string/home_surname_user"
+            android:layout_toRightOf="@id/name"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="13sp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/name"
+            android:text="@string/online"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_messege"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:background="@drawable/bottom_navigation_drawable"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="100">
+        <EditText
+            android:id="@+id/edit_meesege"
+            android:textSize="16sp"
+            android:text="@string/send_messege"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_weight="80"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:layout_margin="5dp"
+            android:id="@+id/send_messege"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_send_messege"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>

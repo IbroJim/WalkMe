@@ -65,13 +65,14 @@ public class FragmentCode extends Fragment {
         signInWithPhoneAuthCredential(credential);
     }
     private String getPhone(){
+
         String phone = getArguments().getString(KEY);
         Log.d("KEY"," " +codeSent);
         return phone;
     }
     private Integer getKey(){
         Integer i = getArguments().getInt(KEY_INT);
-        Log.d("KEY"," " +codeSent);
+        Log.d("KEY"," " +i);
         return i;
     }
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
@@ -80,14 +81,16 @@ public class FragmentCode extends Fragment {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            if (getKey()!=null){
+                            if (getKey()==1){
                                 Intent intent=new Intent(getActivity(),HomeActivity.class);
                                 startActivity(intent);
+                            }else{
+                                ((AccountActivity)getActivity()).nextFragmentRegistry();
                             }
-                            ((AccountActivity)getActivity()).nextFragmentRegistry();
+
                         }else {
                             if(task.getException() instanceof FirebaseAuthInvalidCredentialsException)
-                                Log.d("KEY","Execption");
+                              Toast.makeText(getActivity()," Произошла ошибка",Toast.LENGTH_LONG).show();
                         }
                     }
 

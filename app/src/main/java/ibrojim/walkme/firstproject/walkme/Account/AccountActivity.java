@@ -24,19 +24,12 @@ public class AccountActivity extends AppCompatActivity {
         fm=getSupportFragmentManager();
         fm.beginTransaction().add(R.id.fragmentContainer,fragmentLogin).commit();
     }
-    public void nextFragment(String string){
-        Bundle bundle = new Bundle();
-        bundle.putString(FragmentCode.KEY, string);
-        fragmentCode.setArguments(bundle);
-        fm.beginTransaction().replace(R.id.fragmentContainer,fragmentCode).commit();
-    }
     public void nextFragment(){
              fm.beginTransaction().replace(R.id.fragmentContainer,fragmentVerify).commit();
     }
-    public void nextFragmentLogin(String string){
+    public void nextFragmentLogin(String string, Integer i){
         Bundle bundle = new Bundle();
-        Bundle bundle1= new Bundle();
-        bundle1.putInt(FragmentCode.KEY_INT,1);
+        bundle.putInt(FragmentCode.KEY_INT,i);
         bundle.putString(FragmentCode.KEY, string);
         fragmentCode.setArguments(bundle);
         fm.beginTransaction().replace(R.id.fragmentContainer,fragmentCode).commit();

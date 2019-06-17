@@ -47,7 +47,7 @@
     </style>
     <style name="TextTagGroup" parent="TagGroup">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_height">115dp</item>
         <item name="android:paddingTop">20dp</item>
         <item name="android:paddingLeft">6dp</item>
         <item name="android:layout_marginRight">8dp</item>

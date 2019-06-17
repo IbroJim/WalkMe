@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorMilkgrey"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorMilkgrey">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/user_image"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:scaleType="centerCrop"
@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
+        android:id="@+id/invite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -28,6 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
     <ImageButton
+        android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -43,51 +45,26 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#4Dffffff"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/user_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"></android.support.v7.widget.RecyclerView>
+        app:layout_constraintStart_toStartOf="parent">
+
+    </android.support.v7.widget.RecyclerView>
 
 
     <TextView
-        android:id="@+id/home_name_user"
+        android:id="@+id/areya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        android:text="@string/home_name"
-        android:textColor="@color/colorBlack"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:text="ПГТ. Советский "
         android:textColor="@color/colorTitle"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/home_name_user"
-        app:layout_constraintTop_toBottomOf="@+id/home_name_user" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/year"
-        android:textColor="@color/colorTitle"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/home_name_user" />
+        app:layout_constraintStart_toStartOf="@+id/full_name"
+        app:layout_constraintTop_toBottomOf="@+id/full_name" />
 
     <me.gujun.android.taggroup.TagGroup
-        android:id="@+id/home_tag_layout"
+        android:id="@+id/interest"
         style="@style/TextTagGroup"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -98,7 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/areya" />
 
     <TextView
         android:id="@+id/textView3"
@@ -110,18 +87,18 @@
         android:text="@string/interest"
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/home_tag_layout"
-        app:layout_constraintEnd_toStartOf="@+id/home_tag_layout"
+        app:layout_constraintBottom_toTopOf="@+id/interest"
+        app:layout_constraintEnd_toStartOf="@+id/interest"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/home_tag_layout"
-        app:layout_constraintTop_toTopOf="@+id/home_tag_layout"
+        app:layout_constraintStart_toEndOf="@+id/interest"
+        app:layout_constraintTop_toTopOf="@+id/interest"
         app:layout_constraintVertical_bias="0.0" />
 
 
     <TextView
-        android:id="@+id/edit_myself"
+        android:id="@+id/myself"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="115dp"
         android:layout_gravity="center|top"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -129,15 +106,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/user_shape_background"
-        android:lines="5"
-        android:maxLines="8"
         android:paddingLeft="8dp"
         android:paddingTop="20dp"
         android:text="Введите информацию"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_tag_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/interest" />
 
 
     <TextView
@@ -150,24 +125,76 @@
         android:text="@string/my_self"
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/edit_myself"
-        app:layout_constraintEnd_toStartOf="@+id/edit_myself"
+        app:layout_constraintBottom_toTopOf="@+id/myself"
+        app:layout_constraintEnd_toStartOf="@+id/myself"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/edit_myself"
-        app:layout_constraintTop_toTopOf="@+id/edit_myself"
+        app:layout_constraintStart_toEndOf="@+id/myself"
+        app:layout_constraintTop_toTopOf="@+id/myself"
         app:layout_constraintVertical_bias="0.0" />
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <include layout="@layout/bottom_navigation_view_ex"
-
-            />
+        <include layout="@layout/bottom_navigation_view_ex" />
     </FrameLayout>
 
+    <LinearLayout
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+
+        <TextView
+            android:id="@+id/surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_surname_user"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:text="@string/home_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/year"
+        android:textColor="@color/colorTitle"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/areya"
+        app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+
+    <ProgressBar
+        android:id="@+id/searh_progress_bar"
+        android:layout_width="300dp"
+        android:layout_height="343dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toTopOf="@+id/user_image" />
 
 </android.support.constraint.ConstraintLayout>
